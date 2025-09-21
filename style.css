@@ -270,7 +270,8 @@ header {
     width: 70px;
 }
 
-.transform:hover, .transform-contato:hover {
+.transform:hover,
+.transform-contato:hover {
     transform: scale(1.2);
 }
 
@@ -281,13 +282,32 @@ header {
 
 .footer {
     background-color: var(--escuro1);
-    
+
 }
- .footer p {
+
+.footer p {
     padding: 20px;
     font-family: var(--fonte-normal);
     font-size: 16px;
     font-weight: 400;
     color: var(--branco);
     text-align: center;
- }
+}
+
+.pokebola2 {
+    animation: girar 1s linear infinite;
+    width: 200px;
+    /* ajuste o tamanho */
+    height: 72px;
+    
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
