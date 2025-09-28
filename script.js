@@ -47,3 +47,14 @@ function smoothScrollTo(endX, endY, duration) {
     window.scroll(newX, newY);
   }, 1000 / 60);
 }
+
+const menuBtn = document.querySelector(".menu-btn");
+const menuMobile = document.querySelector(".menu-mobile");
+
+menuBtn.addEventListener("click", () => {
+  if (menuMobile.style.display === "block") {
+    menuMobile.style.display = "none";
+  } else {
+    menuMobile.style.display = "block";
+  }
+});
