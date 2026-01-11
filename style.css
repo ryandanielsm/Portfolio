@@ -1,539 +1,644 @@
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 @keyframes revealLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .reveal {
-    opacity: 0;
-    animation: revealLeft 1s ease forwards;
+  opacity: 0;
+  animation: revealLeft 1s ease forwards;
 }
 
-
 :root {
-    --fundo: #E4F2E7;
-    --escuro1: #2D3E40;
-    --escuro2: #387373;
-    --branco: #FFFFFF;
-    --claro: #93BFB7;
-    --cinza: #97A6A0;
-    --fonte-pixel: "Pixelify Sans", sans-serif;
-    --fonte-normal: "Roboto", sans-serif;
+  --fundo: #e4f2e7;
+  --escuro1: #2d3e40;
+  --escuro2: #387373;
+  --branco: #ffffff;
+  --claro: #93bfb7;
+  --cinza: #97a6a0;
+  --fonte-pixel: "Pixelify Sans", sans-serif;
+  --fonte-normal: "Roboto", sans-serif;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: var(--fundo);
+  background-color: var(--fundo);
 }
 
 header {
-    background: var(--escuro1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 16px 81px 0px 81px;
-    padding: 10px;
-    border-radius: 10px;
+  background: var(--escuro1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 81px 0px 81px;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .logo-ryan img {
-    width: 110px;
-    height: 29px;
-    width: auto;
-    margin-left: 20px;
+  width: 110px;
+  height: 29px;
+  width: auto;
+  margin-left: 20px;
 }
 
 .nav-header ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
 }
 
 .nav-header a {
-    text-decoration: none;
-    color: var(--branco);
-    font-family: var(--fonte-normal);
-    font-size: 16px;
-    font-weight: 400;
-    margin: 0px 30px 0px 0px;
+  text-decoration: none;
+  color: var(--branco);
+  font-family: var(--fonte-normal);
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0px 30px 0px 0px;
 }
 
 .nav-header a:hover {
-    color: #93BFB7;
+  color: #93bfb7;
 }
 
 .section-banner {
-    font-family: var(--fonte-pixel);
-    color: var(--escuro2);
-    display: flex;
-    /*flex-direction: column;*/
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 90px;
+  font-family: var(--fonte-pixel);
+  color: var(--escuro2);
+  display: flex;
+  /*flex-direction: column;*/
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 90px;
 }
 
 #texto-banner {
-    font-size: 32px;
-    text-align: center;
-    margin-right: 50px;
-    margin: 0 0 0 5%;
-    line-height: 1;
-    font-weight: 300;
-
+  font-size: 32px;
+  text-align: center;
+  margin-right: 50px;
+  margin: 0 0 0 5%;
+  line-height: 1;
+  font-weight: 300;
 }
 
 #titulo-banner {
-    font-size: 64px;
-    margin-top: 0;
-    text-transform: uppercase;
-    font-weight: 300;
-
+  font-size: 64px;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
 #texto-banner-secundario {
-    font-size: 20px;
-    width: 400px;
-    height: 96px;
-    text-align: center;
-    margin: 0 0 0 10%;
-
+  font-size: 20px;
+  width: 400px;
+  height: 96px;
+  text-align: center;
+  margin: 0 0 0 10%;
 }
 
 .tecnologia {
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    background-color: var(--claro);
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  background-color: var(--claro);
 }
 
 .secao-curso {
-    text-align: center;
-    background-color: var(--escuro1);
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: start; */
-    /* align-items: start;*/
+  text-align: center;
+  background-color: var(--escuro1);
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: start; */
+  /* align-items: start;*/
 }
 
 .secao-curso h2 {
-    font-family: var(--fonte-pixel);
-    color: var(--claro);
-    margin-bottom: 80px;
-    font-size: 48px;
-    text-transform: uppercase;
-
+  font-family: var(--fonte-pixel);
+  color: var(--claro);
+  margin-bottom: 80px;
+  font-size: 48px;
+  text-transform: uppercase;
 }
 
 .div-curso {
-    justify-content: start;
-    align-items: start;
+  justify-content: start;
+  align-items: start;
 }
 
 .curso-esquerda {
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 #curso-direita {
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    text-align: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 #padding-cursos {
-    padding: 0 400px;
+  padding: 0 400px;
 }
 
 .curso {
-    display: flex;
-    margin-bottom: 80px;
+  display: flex;
+  margin-bottom: 80px;
 }
 
 .secao-curso h3 {
-    font-family: var(--fonte-normal);
-    color: var(--claro);
-    font-size: 32px;
+  font-family: var(--fonte-normal);
+  color: var(--claro);
+  font-size: 32px;
 }
 
 .paragrafo-tempo {
-    color: var(--branco);
-    margin-top: 10px;
-    font-family: var(--fonte-normal);
-    font-size: 16px;
-
+  color: var(--branco);
+  margin-top: 10px;
+  font-family: var(--fonte-normal);
+  font-size: 16px;
 }
 
 .paragrafo-info {
-    font-family: var(--fonte-normal);
-    color: var(--cinza);
-    margin-top: 10px;
-    font-size: 20px;
-
+  font-family: var(--fonte-normal);
+  color: var(--cinza);
+  margin-top: 10px;
+  font-size: 20px;
 }
 
-.sobre {
-    /*display: flex;*/
-    padding: 50px;
-    background-color: var(--claro);
-    /*flex-direction: column;*/
-    font-size: 48px;
+.projetos {
+  /*display: flex;*/
+  padding: 50px;
+  background-color: var(--claro);
+  /*flex-direction: column;*/
+  font-size: 48px;
 }
 
 #titulo-sobre {
-    /*display: flex;
+  /*display: flex;
     text-align: center;
     flex-direction: column;*/
-    text-align: center;
-    font-size: 48px;
-    font-family: var(--fonte-pixel);
-    color: var(--escuro1);
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-bottom: 50px;
+  text-align: center;
+  font-size: 48px;
+  font-family: var(--fonte-pixel);
+  color: var(--escuro1);
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 50px;
 }
 
 #imagem-texto-sobre {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .div-paragrafo {
-    font-family: var(--fonte-normal);
-    color: var(--escuro1);
-    font-weight: 400;
-    width: 500px;
-    margin-left: 100px;
-
+  font-family: var(--fonte-normal);
+  color: var(--escuro1);
+  font-weight: 400;
+  width: 500px;
+  margin-left: 100px;
 }
 
 .div-paragrafo p {
-    margin-bottom: 20px;
-    text-align: justify;
-    font-size: 24px;
-    font-weight: ;
-
+  margin-bottom: 20px;
+  text-align: justify;
+  font-size: 24px;
 }
 
 .contato {
-    background-image: url(img/cenario.png);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  background-image: url(img/cenario.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 #imagem-contato {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .contato h2 {
-    text-transform: uppercase;
-    font-family: var(--fonte-pixel);
-    font-size: 60px;
-    color: var(--branco);
-    text-shadow: 5px 5px var(--escuro2);
-    margin-top: 30px;
+  text-transform: uppercase;
+  font-family: var(--fonte-pixel);
+  font-size: 60px;
+  color: var(--branco);
+  text-shadow: 5px 5px var(--escuro2);
+  margin-top: 30px;
 }
 
 .pokedex {
-    display: flex;
-    gap: 62px;
-    margin: 40px 0;
+  display: flex;
+  gap: 62px;
+  margin: 40px 0;
 }
 
 .transform {
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    width: 70px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  width: 70px;
 }
 
 .transform:hover,
 .transform-contato:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .transform-contato {
-    cursor: pointer;
-    transition: transform 0.3s ease;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .footer {
-    background-color: var(--escuro1);
-
+  background-color: var(--escuro1);
 }
 
 .footer p {
-    padding: 20px;
-    font-family: var(--fonte-normal);
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--branco);
-    text-align: center;
+  padding: 20px;
+  font-family: var(--fonte-normal);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--branco);
+  text-align: center;
 }
 
 .pokebola2 {
-    animation: girar 1s linear infinite;
-    width: 200px;
-    /* ajuste o tamanho */
-    height: 72px;
+  animation: girar 1s linear infinite;
+  width: 200px;
+  /* ajuste o tamanho */
+  height: 72px;
+}
 
+.card-body {
+  background-color: var(--escuro1);
+}
+
+.card-title {
+  color: var(--cinza);
+  font-size: 30px;
+}
+
+.card-text {
+  color: var(--cinza);
+  font-size: 18px;
+}
+
+.btn-primary {
+  background-color: var(--cinza);
+  border-color: #2d3e40;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: var(--claro) !important;
+  border-color: var(--escuro2) !important;
+  color: var(--branco) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(45, 62, 64, 0.3);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(45, 62, 64, 0.2);
+}
+
+.btn .btn-primary:hover {
+}
+
+#exampleModalLabel {
+  font-size: 20px;
+  color: var(--cinza);
+}
+
+#paragrafo-modal {
+  font-size: 15px;
+  color: var(--cinza);
+}
+
+video {
+    width: 1100px;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 @keyframes girar {
-    from {
-        transform: rotate(0deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
 
-    to {
-        transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Estilos do Modal */
+.modal {
+  --bs-backdrop-bg: rgba(45, 62, 64, 0.7);
+}
+
+.modal.fade .modal-dialog {
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+    opacity 0.4s ease;
+  transform: translateY(30px) scale(0.95);
+  opacity: 0;
+}
+
+.modal.show .modal-dialog {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  animation: modalSlideUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.modal.fade .modal-backdrop {
+  transition: opacity 0.4s ease;
+  opacity: 0;
+}
+
+.modal.show .modal-backdrop {
+  opacity: 1;
+  animation: modalFadeIn 0.4s ease forwards;
+}
+
+.modal-content {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 20px 60px rgba(45, 62, 64, 0.3);
+  background-color: var(--escuro1);
+}
+
+.modal-header {
+  background-color: var(--escuro1);
+  border-radius: 15px 15px 0 0;
+  border-bottom: none;
+}
+
+.modal-header .btn-close {
+  filter: brightness(0) invert(1);
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  font-size: 18px;
 }
 
 .menu-btn,
 .menu-mobile {
+  display: none;
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+@media (max-width: 480px) {
+  header {
+    background: var(--escuro1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 30px 0px 30px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .logo-ryan img {
+    width: 90px;
+    height: 23px;
+    margin-left: 10px;
+  }
+
+  .nav-header ul {
     display: none;
+  }
+
+  #texto-banner {
+    font-size: 16px;
+  }
+
+  #titulo-banner {
+    font-size: 25px;
+  }
+
+  #texto-banner-secundario {
+    font-size: 14px;
+    width: 150px;
+  }
+
+  .conteudo-banner img {
+    width: 220px;
+    height: 310px;
+  }
+
+  .tecnologia {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding: 30px;
+  }
+
+  .transform {
+    width: 60px;
+  }
+
+  #imagem-texto-sobre {
+    flex-direction: column;
+  }
+
+  #padding-cursos {
+    padding: 0px;
+  }
+
+  .conteudo-banner img {
+    width: 180px;
+    height: 280px;
+  }
+
+  .secao-curso {
+    padding: 40px 0px;
+  }
+
+  #imagem-sobre {
+    width: 300px;
+    height: 392px;
+  }
+
+  .div-paragrafo {
+    width: 300px;
+    margin-left: 0px;
+  }
+
+  .pokedex {
+    display: flex;
+    gap: 20px;
+    margin: 40px 0px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .transform-contato {
+    width: 60px;
+    height: 60px;
+  }
+
+  .contato h2,
+  #titulo-sobre,
+  .secao-curso h2 {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  #imagem-contato {
+    margin-top: 20px;
+    width: 170px;
+    height: 170px;
+  }
+
+  .transform {
+    width: 50px;
+  }
+
+  .pokebola2 {
+    width: 115px;
+    height: 40px;
+  }
+
+  .secao-curso h3 {
+    font-size: 20px;
+  }
+
+  .paragrafo-info {
+    font-size: 16px;
+  }
+
+  .paragrafo-tempo {
+    font-size: 14px;
+  }
+
+  .div-paragrafo p {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .sobre {
+    padding: 20px;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+
+  #titulo-sobre {
+    margin-bottom: 16px;
+  }
+
+  .secao-curso h2 {
+    margin-bottom: 60px;
+  }
+
+  .menu-btn {
+    display: block;
+    /* aparece só no mobile */
     width: 30px;
     height: auto;
     cursor: pointer;
     position: absolute;
-    top: 20px;
+    top: 23px;
+    right: 45px;
+  }
+
+  /* O menu vai aparecer só quando clicar (via JS) */
+  .menu-mobile {
+    position: absolute;
+    top: 60px;
     right: 20px;
-}
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background: white;
+    /* fundo branco */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 150px;
+    z-index: 9999;
+    /* <<< AQUI a mágica */
+    font-family: var(--fonte-normal);
+    color: var(--escuro1);
+  }
 
-@media (max-width: 480px) {
+  .menu-mobile ul {
+    list-style: none;
+    /* sem bolinhas */
+    margin: 0;
+    padding: 0;
+  }
 
-    header {
-        background: var(--escuro1);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 16px 30px 0px 30px;
-        padding: 10px;
-        border-radius: 10px;
-    }
+  .menu-mobile li {
+    margin: 10px 0;
+    /* espaço entre opções */
+  }
 
-    .logo-ryan img {
-        width: 90px;
-        height: 23px;
-        margin-left: 10px;
-    }
+  .menu-mobile a {
+    text-decoration: none;
+    /* tira sublinhado */
+    color: var(--claro);
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+  }
 
-    .nav-header ul {
-        display: none;
-    }
+  .menu-mobile a:hover {
+    background: var(--escuro2);
+    /* cor de fundo ao passar o mouse */
+    color: white;
+    /* cor do texto no hover */
+  }
 
-    #texto-banner {
-        font-size: 16px;
-
-    }
-
-    #titulo-banner {
-        font-size: 25px;
-    }
-
-    #texto-banner-secundario {
-        font-size: 14px;
-        width: 150px;
-
-    }
-
-    .conteudo-banner img {
-        width: 220px;
-        height: 310px;
-    }
-
-    .tecnologia {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        justify-items: center;
-        padding: 30px;
-    }
-
-    .transform {
-        width: 60px;
-    }
-
-    #imagem-texto-sobre {
-        flex-direction: column;
-    }
-
-    #padding-cursos {
-        padding: 0px;
-    }
-
-    .conteudo-banner img {
-        width: 180px;
-        height: 280px;
-    }
-
-    .secao-curso {
-        padding: 40px 0px;
-    }
-
-    #imagem-sobre {
-        width: 300px;
-        height: 392px;
-    }
-
-    .div-paragrafo {
-        width: 300px;
-        margin-left: 0px;
-
-    }
-
-    .pokedex {
-        display: flex;
-        gap: 20px;
-        margin: 40px 0px;
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .transform-contato {
-        width: 60px;
-        height: 60px;
-    }
-
-    .contato h2,
-    #titulo-sobre,
-    .secao-curso h2 {
-        text-align: center;
-        font-size: 40px;
-    }
-
-    #imagem-contato {
-        margin-top: 20px;
-        width: 170px;
-        height: 170px;
-    }
-
-    .transform {
-        width: 50px;
-    }
-
-    .pokebola2 {
-        width: 115px;
-        height: 40px;
-    }
-
-    .secao-curso h3 {
-        font-size: 20px;
-    }
-
-    .paragrafo-info {
-        font-size: 16px;
-    }
-
-    .paragrafo-tempo {
-        font-size: 14px;
-    }
-
-    .div-paragrafo p {
-        font-size: 16px;
-        margin-top: 20px;
-    }
-
-    .sobre {
-        padding: 20px;
-    }
-
-    .footer p {
-        font-size: 14px;
-    }
-
-    #titulo-sobre {
-        margin-bottom: 16px;
-    }
-
-    .secao-curso h2 {
-        margin-bottom: 60px;
-    }
-
-    .menu-btn {
-        display: block;
-        /* aparece só no mobile */
-        width: 30px;
-        height: auto;
-        cursor: pointer;
-        position: absolute;
-        top: 23px;
-        right: 45px;
-    }
-
-    /* O menu vai aparecer só quando clicar (via JS) */
-    .menu-mobile {
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background: white;
-        border-radius: 8px;
-        padding: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        background: white;
-        /* fundo branco */
-        border-radius: 10px;
-        padding: 15px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        width: 150px;
-        z-index: 9999;
-        /* <<< AQUI a mágica */
-        font-family: var(--fonte-normal);
-        color: var(--escuro1);
-
-
-    }
-
-    .menu-mobile ul {
-        list-style: none;
-        /* sem bolinhas */
-        margin: 0;
-        padding: 0;
-    }
-
-    .menu-mobile li {
-        margin: 10px 0;
-        /* espaço entre opções */
-    }
-
-    .menu-mobile a {
-        text-decoration: none;
-        /* tira sublinhado */
-        color: var(--claro)
-        font-size: 16px;
-        font-weight: 400;
-        display: block;
-        padding: 8px;
-        border-radius: 5px;
-        transition: background 0.3s, color 0.3s;
-        
-    }
-
-    .menu-mobile a:hover {
-        background: var(--escuro2);
-        /* cor de fundo ao passar o mouse */
-        color: white;
-        /* cor do texto no hover */
-    }
+  video {
+    width: 370px;
+  }
 }
